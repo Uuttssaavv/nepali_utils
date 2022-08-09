@@ -14,7 +14,7 @@ class NepaliUnicodeToEnglish {
         li.add(map[x[i]] ?? x[i]);
       }
     }
-
+    // li = li.join('').replaceAll(',', '').split('');
     for (var i = 0; i < li.length; i++) {
       //
       if (map2[li[i]] != null) {
@@ -23,7 +23,7 @@ class NepaliUnicodeToEnglish {
       }
     }
 
-    return li.join('').replaceAll(',', '');
+    return li.join('');
   }
 }
 
@@ -57,7 +57,7 @@ Map map = {
   '\u092F': 'ya',
   '\u0930': 'ra',
   '\u0932': 'la',
-  '\u0935': 'wa',
+  '\u0935': 'va',
   '\u0936': 'sha',
   '\u0937': 'sha',
   '\u0938': 'sa',
@@ -91,6 +91,8 @@ Map map = {
   '\u096d': '7',
   '\u096e': '8',
   '\u096f': '9',
+  //symbols
+  '%2c': ',',
 };
 Map map2 = {
   '\u093F': 'i',
